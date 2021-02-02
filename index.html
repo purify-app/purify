@@ -1,66 +1,86 @@
 <html>
-  <head>
+
+<head>
     <title> Purify </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <style>
-      body{
-        margin:0;
-      }
-      *{
-      font-family: 'Montserrat', sans-serif;
-      }
-    </style>
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+
 <body>
-  <div id="header" style=""> <img src="logo.png" style="height: 90px;padding: 20px;">
-    <div style="display: inline-block;vertical-align: top;padding: 20px;color: #3e4651;">
-    <span style="font-size: 50px;display: block;">Purify</span>
-    <span>AI Tool For Detecting The Fake News</span>
-      </div>
-  </div>
-  <div id="content" style="min-height: 100vh;">
-    
-      <div style="display: inline-block;width: 50%;vertical-align: top;box-sizing: border-box;padding: 100px 50px;">
-
-<div>google-chrome-extention</div>
-<div style="font-size: 30px;margin: 20px 0;">Google Chrome Browser Extention for Purify application.</div>
-
-<div style="font-size: 20px;margin-bottom: 20px;">Purify allows to spot and highlight the posts on social media that contains dessinformation and propaganda.</div>
-
-<div style="font-size: 20px;">Our goal is to protect online comunity from fake content and make web safer place.
-  <br/>
-<br/>
-The extension uses a language model to predict whether or not they post on social media contains Fake News. It uses five categories…
-<br/><br/>
-The extension uses a language model to predict whether or not they post on social media contains Fake News. It uses five categories to label the posts:
-Discrediting, Ideologized Propaganda, False Media, False Supporting, and Government Propaganda. In case if the post is classified as a positive, tag highlighting the corresponding category appears under it.
- <br/><br/>
-
-To prediction the labels of a post, the application uses a fine-tuned ELECTRA model for the Georgian language. The model itself is open source and is located at https://huggingface.co/jnz/electra-ka-fake-news-tagging
-<br/><br/>
-To fine-tune the model 15 000 positive and 92 000 negative posts had been collected from fact-checking organizations operating in Georgia, between them: 
-<br/>https://disinfoobserver.ge
-<br/>https://mythdetector.ge 
-<br/><br/>
-To maximize the model predictions, the extension can collect user feedback and retrain the model on collected entries.  
-<br/>
-The code for extension and API are both open source and at the following repositories:
-<br/>
-  <br/>Chrome Extension: <a href="https://github.com/purify-app/google-chrome-extention"> https://github.com/purify-app/google-chrome-extention</a>
-  <br/>API: <a href="https://github.com/purify-app/gae-api">https://github.com/purify-app/gae-api</a>
-<br/>
-<br/>The application was developed during the hackathon - Hacking the Fake News, organized by Digital Communication Network, Myth Detector, ForSet, and Media Development Foundation.
-
-</div>
-                </div>
-    <div style="display: inline-block;width: 49%;vertical-align: top;background-color: #f0f2f5;
-height: 100%;">
-<img src="screen-1.png" style="width: 100%;">
-<img src="screen-2.png" style="display: none;width: 100%;">
-      </div>
+    <div id="header"> 
+        <img src="logo.png" class="logo">
+        <div class="logo-text">
+            <span class="logo-main-text">Purify</span>
+            <span>AI Tool For Detecting The Fake News</span>
+        </div>
+        <div class="top-menu">
+            <a href="index.html">About Purify</a>
+            <a href="https://chrome.google.com/webstore/detail/purify/ioniagkbdmneealfagcobbkgncndiign" target="_blank">Extension</a>
+            <a href="methodology.html">Methodology</a>
+            <a href="partners.html">Partners</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
     </div>
-  <div id="footer" style="width:100%; text-align:center;height:50px;line-height:50px">
-    Purify 2020 <a href="privacy-policy.html">Privacy Policy</a>
-  </div>
+    <div id="content">
+            <div class="title">Google Chrome Browser Extention for Purify application.</div>
+            <img src="screen-1-1.png" style="margin-left:25%;width: 50%;">
+
+            <div style="font-size: 20px;margin-bottom: 20px;">Purify allows to spot and highlight the posts on social
+            
+            <div>google-chrome-extention</div>
+                media
+                that contains dessinformation and propaganda.</div>
+
+            <div style="font-size: 20px;">Our goal is to protect online comunity from fake content and make web safer
+                place.
+                <br />
+                <br />
+                The extension uses a language model to predict whether or not they post on social media contains Fake
+                News. It
+                uses five categories…
+                <br /><br />
+                The extension uses a language model to predict whether or not they post on social media contains Fake
+                News. It
+                uses five categories to label the posts:
+                Discrediting, Ideologized Propaganda, False Media, False Supporting, and Government Propaganda. In case
+                if the
+                post is classified as a positive, tag highlighting the corresponding category appears under it.
+                <br /><br />
+
+                To prediction the labels of a post, the application uses a fine-tuned ELECTRA model for the Georgian
+                language.
+                The model itself is open source and is located at
+                https://huggingface.co/jnz/electra-ka-fake-news-tagging
+                <br /><br />
+                To fine-tune the model 15 000 positive and 92 000 negative posts had been collected from fact-checking
+                organizations operating in Georgia, between them:
+                <br />https://disinfoobserver.ge
+                <br />https://mythdetector.ge
+                <br /><br />
+                To maximize the model predictions, the extension can collect user feedback and retrain the model on
+                collected
+                entries.
+                <br />
+                The code for extension and API are both open source and at the following repositories:
+                <br />
+                <br />Chrome Extension: <a href="https://github.com/purify-app/google-chrome-extention">
+                    https://github.com/purify-app/google-chrome-extention</a>
+                <br />API: <a href="https://github.com/purify-app/gae-api">https://github.com/purify-app/gae-api</a>
+                <br />
+                <br />The application was developed during the hackathon - Hacking the Fake News, organized by Digital
+                Communication Network, Myth Detector, ForSet, and Media Development Foundation.
+
+            </div>
+        
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <span>Purify 2020 </span>
+            <a href="privacy-policy.html">Privacy Policy</a> 
+            <a href="https://chrome.google.com/webstore/detail/purify/ioniagkbdmneealfagcobbkgncndiign" target="_blank">Chrome Extension</a>
+        </div>
+    </div>
+
 </html>

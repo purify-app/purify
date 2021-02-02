@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding-top: 110px;
+}
+#header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 110px;
+    box-shadow: 0 0 6px 3px #00000047;
+    position: fixed;
+    background: #fff;
+    top:0
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+#header .logo{
+    height: 110px;
+    width: 110px;
+    padding: 20px;
+}
+#header .logo-text{
+    display: inline-block;vertical-align: top;
+    padding: 0 20px;color: #3e4651;
+    width: 40%;
+}
+#header .logo-main-text{
+    font-size: 50px;display: block;
+}
+#header .top-menu{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    padding: 15px 60px;
+}
+.top-menu a {
+    font-size: 1.2em;
+    padding: 7px 45px;
+    color: #3e4651;
+    text-decoration: none;
+}
+
+.top-menu a:hover{
+    color: #999999;
+}
+#content{
+    width: 60%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.title {
+    font-size: 3em;
+    margin: 20px 0; 
+    font-weight: 600;
+    padding: 40px 0;
+}
+.sub-title {
+    font-size: 2em;
+    margin: 20px 0; 
+    font-weight: 600;
+    padding: 40px 0;
+}
+#footer{
+    width: 100%;
+    text-align: center;
+    height: 110px;
+    line-height: 50px;
+    background: #2b2b2b;
+    position: relative;
+    margin-top: 130px;
+}
+#footer div span, #footer div a{
+    color: #cacaca;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin-right: 20px;
+}
+#footer div a:hover{
+    opacity: 0.5;
+}
+#footer div {
+    position: absolute;
+    right:15px;
+    bottom:20px;
+}
+
+.pur-tag{
+    padding: 5px 8px; 
+    color: #26110d; 
+    padding-left: 15px;
+    display: inline-block; 
+    border-radius: 7px; 
+    margin-right: 5px; 
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #e4e6eb;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.pur-tag::after{
+    content: '';
+    position: absolute;
+    left:5px;
+    width:7px;
+    height:7px;
+    border-radius:100%;
+    background-color: #f02849;
+    top: 9px;
+}
