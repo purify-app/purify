@@ -1,85 +1,121 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title> Purify </title>
+    <meta charset="utf-8" />
+    <title> Purify - How it Works?</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="header"> 
+    <div id="header">
         <img src="logo.png" class="logo">
         <div class="logo-text">
             <span class="logo-main-text">Purify</span>
-            <span>AI Tool For Detecting The Fake News</span>
+            <span>Fake News Detectior</span>
         </div>
         <div class="top-menu">
             <a href="index.html">About Purify</a>
-            <a href="https://chrome.google.com/webstore/detail/purify/ioniagkbdmneealfagcobbkgncndiign" target="_blank">Extension</a>
-            <a href="methodology.html">Methodology</a>
-            <a href="partners.html">Partners</a>
+            <a href="https://chrome.google.com/webstore/detail/purify/ioniagkbdmneealfagcobbkgncndiign"
+                target="_blank">Extension</a>
+            <!-- <a href="methodology.html">Methodology</a> -->
+            <!-- <a href="partners.html">Partners</a> -->
             <a href="privacy-policy.html">Privacy Policy</a>
         </div>
     </div>
     <div id="content">
-            <div class="title">Google Chrome Browser Extention for Purify application.</div>
-            <img src="screen-1-1.png" style="margin-left:25%;width: 50%;">
+        <h1 id="purify" class="title">What's Purify?</h1>
 
-            <div style="font-size: 20px;margin-bottom: 20px;">Purify allows to spot and highlight the posts on social
-            
-            <div>google-chrome-extention</div>
-                media
-                that contains dessinformation and propaganda.</div>
-
-            <div style="font-size: 20px;">Our goal is to protect online comunity from fake content and make web safer
-                place.
-                <br />
-                <br />
-                The extension uses a language model to predict whether or not they post on social media contains Fake
-                News. It
-                uses five categories…
-                <br /><br />
-                The extension uses a language model to predict whether or not they post on social media contains Fake
-                News. It
-                uses five categories to label the posts:
-                Discrediting, Ideologized Propaganda, False Media, False Supporting, and Government Propaganda. In case
-                if the
-                post is classified as a positive, tag highlighting the corresponding category appears under it.
-                <br /><br />
-
-                To prediction the labels of a post, the application uses a fine-tuned ELECTRA model for the Georgian
-                language.
-                The model itself is open source and is located at
-                https://huggingface.co/jnz/electra-ka-fake-news-tagging
-                <br /><br />
-                To fine-tune the model 15 000 positive and 92 000 negative posts had been collected from fact-checking
-                organizations operating in Georgia, between them:
-                <br />https://disinfoobserver.ge
-                <br />https://mythdetector.ge
-                <br /><br />
-                To maximize the model predictions, the extension can collect user feedback and retrain the model on
-                collected
-                entries.
-                <br />
-                The code for extension and API are both open source and at the following repositories:
-                <br />
-                <br />Chrome Extension: <a href="https://github.com/purify-app/google-chrome-extention">
-                    https://github.com/purify-app/google-chrome-extention</a>
-                <br />API: <a href="https://github.com/purify-app/gae-api">https://github.com/purify-app/gae-api</a>
-                <br />
-                <br />The application was developed during the hackathon - Hacking the Fake News, organized by Digital
-                Communication Network, Myth Detector, ForSet, and Media Development Foundation.
-
-            </div>
+        <img src="screen-1-1.png" style="margin-left:25%;width: 50%;">
         
+        <div>
+            <br/><br/>
+            <br/><br/>
+            Purify allows to spot and highlight the posts on social media that falls into one of the pre defined categories: <br/><br/>
+                <div class="pur-tag">Discrediting</div>, <div class="pur-tag">False Media</div>, <div class="pur-tag">False Supporting</div> or <div class="pur-tag">Propaganda</div>.
+                <br/><br/>
+                The detailed information about facebook fact-checking policy can be viewed at link.
+                <br/><br/><br/>
         </div>
+        <ul>
+            <li><a href="/index.html#purify">What's Purify?</a>
+                <ul>
+                    <li><a href="/index.html#goal">Goal</a></li>
+                    <li><a href="/index.html#developement">Developement</a></li>
+                </ul>
+            </li>
+            <li><a href="/index.html#how-it-works">How it Works?</a>
+                <ul>
+                    <li><a href="/index.html#model">Model</a></li>
+                    <li><a href="/index.html#data">Data</a></li>
+                    <li><a href="/index.html#extension">Browser Extension</a></li>
+                    <li><a href="/index.html#feedback">Your Feedback </a></li> 
+                    <li><a href="/index.html#code">Code </a></li>    
+                </ul>
+            </li>
+        </ul>
+
+        <h2 id="goal" class="sub-title">Goal</h2>
+        <div>
+            Goal of the project is to protect online comunity from manipulated content and create an additional obsticle agains dissinformation campigs.
+        </div>
+        
+        <h2 id="developement" class="sub-title">Developement</h2>
+        <div>
+            The application was developed during the hackathon - Hacking the Fake News, organized by Digital Communication Network, Myth Detector, ForSet, and Media Development Foundation.
+        </div>
+        <h2 id="how-it-works" class="title">How it Works?</h2>
+
+        <h2 id="model" class="sub-title">Model</h2>
+        <div>Model is the a collection of interconnected the desission gates that is able to classify the text between two categories.
+            In order to learn how to distinguish the sentences model is trained using the examples of pre labeled sentences, that were categoriesed by researchers working at fact-checking organisations.
+            <br><br>
+            The model is based on <a href="https://github.com/google-research/electra">ELECTRA</a> architeqture, the final version of fine-tunned medel can be accessed <a href="https://huggingface.co/jnz/electra-ka-fake-news-tagging"> here </a>
+            <br><br>
+            
+            
+            <br /><br />
+            
+        </div>
+        <h2 id="data" class="sub-title">Data</h2>
+        <div>
+            To fine-tune the model 15 000 positive and 92 000 negative posts had been collected from fact-checking
+            organizations operating across the Georgia:
+
+        
+            <a href="https://factcheck.ge" target="_blank">factcheck.ge</a>
+            <a href="https://disinfoobserver.ge" target="_blank">disinfoobserver.ge</a>
+            <a href="https://mythdetector.ge" target="_blank">mythdetector.ge</a>
+            <a href="https://mediachecker.ge" target="_blank">mediachecker.ge</a>
+
+        </div>
+        <h2 id="extension" class="sub-title">Browser Extension</h2>
+        <div>
+            The browser extension reads the facebook feed and chek weather posts, fall into pre-defined categories. If the model's prediction is positive, the tag appears abowe the post, highlighting the predicted category.    
+        </div>
+       
+        <h2 id="feedback" class="sub-title">Your Feedback</h2>
+        Your feedback would be highly appriciated, as it would further increase the accuracy of the model.<br><br>
+
+        In case you agree with the prediction of a model, you can press feedback > agree buton, on the right side, of the prediction, and press dissagree in case you think the predictions are not accurate.<br><br>
+
+        The model is constantly been retrained using data collected throught your feedback.
+
+        <div>
+        <h2 id="Code" class="sub-title">Code</h2>
+        <div>
+            The code for the application is open for contributions on <a href="https://github.com/purify-app">github</a>.<br /><br />
+        </div>
+    </div>
     </div>
     <div id="footer">
         <div>
             <span>Purify 2020 </span>
-            <a href="privacy-policy.html">Privacy Policy</a> 
-            <a href="https://chrome.google.com/webstore/detail/purify/ioniagkbdmneealfagcobbkgncndiign" target="_blank">Chrome Extension</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="https://chrome.google.com/webstore/detail/purify/ioniagkbdmneealfagcobbkgncndiign"
+                target="_blank">Chrome Extension</a>
         </div>
     </div>
 

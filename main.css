@@ -10,7 +10,8 @@ body {
     box-shadow: 0 0 6px 3px #00000047;
     position: fixed;
     background: #fff;
-    top:0
+    top:0;
+    z-index: 10;
 }
 * {
     font-family: 'Montserrat', sans-serif;
@@ -112,4 +113,28 @@ body {
     border-radius:100%;
     background-color: #f02849;
     top: 9px;
+}
+
+
+a[target=_blank]:after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0 2px 0 8px;
+    opacity: .5;
+  }
+
+  a[target=_blank]:hover:after{
+      opacity: .2;
+  }
+  ul li{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px;
+    list-style: tibetan;
+  }
+
+  #content a{
+      color:#575757
+  }
+  #content a:hover{
+    opacity: 0.7;
 }
