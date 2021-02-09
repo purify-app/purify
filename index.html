@@ -33,20 +33,20 @@
         <div>
             <br/><br/>
             <br/><br/>
-            Purify allows to spot and highlight the posts on social media that falls into one of the pre defined categories: <br/><br/>
+            Purify allows to spot and highlight the posts on social media that falls into one of the predefined categories: <br/><br/>
                 <div class="pur-tag">Discrediting</div>, <div class="pur-tag">False Media</div>, <div class="pur-tag">False Supporting</div> or <div class="pur-tag">Propaganda</div>.
                 <br/><br/>
-                The detailed information about facebook fact-checking policy can be viewed at link.
+                The detailed information about the Facebook fact-checking policy can be viewed at <a href="https://www.facebook.com/business/help/341102040382165?id=673052479947730">the link</a>.
                 <br/><br/><br/>
         </div>
         <ul>
             <li><a href="/index.html#purify">What's Purify?</a>
                 <ul>
                     <li><a href="/index.html#goal">Goal</a></li>
-                    <li><a href="/index.html#developement">Developement</a></li>
+                    <li><a href="/index.html#development">Development</a></li>
                 </ul>
             </li>
-            <li><a href="/index.html#how-it-works">How it Works?</a>
+            <li><a href="/index.html#how-it-works">How Does it Work?</a>
                 <ul>
                     <li><a href="/index.html#model">Model</a></li>
                     <li><a href="/index.html#data">Data</a></li>
@@ -59,30 +59,26 @@
 
         <h2 id="goal" class="sub-title">Goal</h2>
         <div>
-            Goal of the project is to protect online comunity from manipulated content and create an additional obsticle agains dissinformation campigs.
+            The goal of the project is to protect the online community from manipulated content and create an additional obstacle against disinformation campaigns.
         </div>
         
-        <h2 id="developement" class="sub-title">Developement</h2>
+        <h2 id="development" class="sub-title">Development</h2>
         <div>
             The application was developed during the hackathon - Hacking the Fake News, organized by Digital Communication Network, Myth Detector, ForSet, and Media Development Foundation.
         </div>
-        <h2 id="how-it-works" class="title">How it Works?</h2>
+        <h2 id="how-it-works" class="title">How Does it Work?</h2>
 
         <h2 id="model" class="sub-title">Model</h2>
-        <div>Model is the a collection of interconnected the desission gates that is able to classify the text between two categories.
-            In order to learn how to distinguish the sentences model is trained using the examples of pre labeled sentences, that were categoriesed by researchers working at fact-checking organisations.
+        <div>
+            Model is a collection of interconnected decision gates that can classify the text between two categories. To learn how to distinguish the sentences, the model is trained using the examples of pre labeled sentences, that were categorized by researchers working at fact-checking organizations. 
             <br><br>
-            The model is based on <a href="https://github.com/google-research/electra">ELECTRA</a> architeqture, the final version of fine-tunned medel can be accessed <a href="https://huggingface.co/jnz/electra-ka-fake-news-tagging"> here </a>
+            The model is based on <a href="https://github.com/google-research/electra">ELECTRA</a> architecture, the final version of the fine-tuned model can be accessed <a href="https://huggingface.co/jnz/electra-ka-fake-news-tagging"> here </a>
             <br><br>
-            
-            
-            <br /><br />
             
         </div>
         <h2 id="data" class="sub-title">Data</h2>
         <div>
-            To fine-tune the model 15 000 positive and 92 000 negative posts had been collected from fact-checking
-            organizations operating across the Georgia:
+            To fine-tune the model 15 000 positive and 92 000 negative posts had been collected from fact-checking organizations operating across Georgia:
 
         
             <a href="https://factcheck.ge" target="_blank">factcheck.ge</a>
@@ -93,20 +89,20 @@
         </div>
         <h2 id="extension" class="sub-title">Browser Extension</h2>
         <div>
-            The browser extension reads the facebook feed and chek weather posts, fall into pre-defined categories. If the model's prediction is positive, the tag appears abowe the post, highlighting the predicted category.    
+            The browser extension reads the Facebook feed and checks whether posts, fall into predefined categories. If the model's prediction is positive, the tag appears above the post, highlighting the predicted category.
         </div>
        
         <h2 id="feedback" class="sub-title">Your Feedback</h2>
-        Your feedback would be highly appriciated, as it would further increase the accuracy of the model.<br><br>
+        Your feedback would be highly appreciated, as it would further increase the accuracy of the model.<br><br>
 
-        In case you agree with the prediction of a model, you can press feedback > agree buton, on the right side, of the prediction, and press dissagree in case you think the predictions are not accurate.<br><br>
-
-        The model is constantly been retrained using data collected throught your feedback.
-
+        In case you agree with the prediction of a model, you can press the 'feedback > agree' button, on the right side, of the prediction, and press 'disagree' in case you think the predictions are not accurate.
+        <br><br>
+ The model is constantly been retrained, using the data collected through your feedback.
+ <br><br>
         <div>
         <h2 id="Code" class="sub-title">Code</h2>
         <div>
-            The code for the application is open for contributions on <a href="https://github.com/purify-app">github</a>.<br /><br />
+            The code for the application is open for contributions on <a href="https://github.com/purify-app">Github</a>.<br /><br />
         </div>
     </div>
     </div>
